@@ -2,7 +2,10 @@
 
 # Class that represents Order entity.
 class Order
-  def initialize(book:, reader:, date:)
+  attr_reader :id, :book, :reader, :date
+
+  def initialize(id:, book:, reader:, date:)
+    @id = id
     @book = book
     @reader = reader
     @date = date

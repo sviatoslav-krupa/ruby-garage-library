@@ -2,7 +2,10 @@
 
 # Class that represents Author entity.
 class Author
-  def initialize(name:, biography:)
+  attr_reader :id, :name, :biography
+
+  def initialize(id:, name:, biography:)
+    @id = id
     @name = name
     @biography = biography
   end
