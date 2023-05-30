@@ -4,6 +4,10 @@ source 'https://rubygems.org'
 
 # gem "rails"
 
-gem 'rspec'
 gem 'rubocop', require: false
-gem 'rubocop-rspec'
+
+group :test do
+  gem 'rspec'
+  gem 'rubocop-rspec'
+  gem 'simplecov', require: false
+end
