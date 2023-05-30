@@ -24,6 +24,10 @@ class Library
     export_orders!
   end
 
+  def books_of(author)
+    @books.select { |book| book.author == author }
+  end
+
   private
 
   def export_authors!
